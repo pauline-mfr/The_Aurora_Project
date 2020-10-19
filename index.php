@@ -87,53 +87,54 @@
 
 
 <div class="container" id="missions">
-<div class="row">
-  <h2>Missions</h2>
-  <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-</div>
-<div class="row">
-  <div class="col-sm-12 col-md-4">
-    <img src="tel.png">
-    <h4>Mission 1</h4>
-    <p>Lorem Ipsum is simply dummy text</p>
-    <button class="btn">Learn more</button>
-    <div class="underline"></div>
+  <div class="row">
+    <h2>Missions</h2>
+    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
   </div>
-  <div class="col-sm-12 col-md-4">
-    <img src="tel.png">
-    <h4>Mission 2</h4>
-    <p>Lorem Ipsum is simply dummy text</p>
-    <button class="btn">Learn more</button>
-    <div class="underline"></div>
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <img src="tel.png">
+      <h4>Mission 1</h4>
+      <p>Lorem Ipsum is simply dummy text</p>
+      <button class="btn">Learn more</button>
+      <div class="underline"></div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <img src="tel.png">
+      <h4>Mission 2</h4>
+      <p>Lorem Ipsum is simply dummy text</p>
+      <button class="btn">Learn more</button>
+      <div class="underline"></div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <img src="tel.png">
+      <h4>Mission 3</h4>
+      <p>Lorem Ipsum is simply dummy text</p>
+      <button class="btn">Learn more</button>
+      <div class="underline"></div>
+    </div>
   </div>
-  <div class="col-sm-12 col-md-4">
-    <img src="tel.png">
-    <h4>Mission 3</h4>
-    <p>Lorem Ipsum is simply dummy text</p>
-    <button class="btn">Learn more</button>
-    <div class="underline"></div>
-  </div>
-</div>
 </div>
 
 
 <footer>
-  <div class="row">
-<div class="col-md-4">
-  <img src="logo.png" alt="logo Aurora">
-</div>
-<div class="col-md-4">
-<ul>
-  <li>A propos</li>
-  <li>Contact</li>
-  <li>Articles</li>
-</ul>
-</div>
-<div class="col-md-4">
-SOCIAL MEDIA
-</div>
+  <div class="d-flex justy-content-center">
+    <div class="col-md-4">
+      <img src="logo.png" alt="logo Aurora">
+    </div>
+    <div class="col-md-4">
+      <ul>
+        <li>A propos</li>
+        <li>Contact</li>
+        <li>Articles</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h4 class="text-uppercase">Social Media</h4>
+    </div>
   </div>
-  <div class="row">
+  <div class="text-center">
+    <p> &copy; Tous Droits Réservés</p>
   </div>
 </footer>
 
