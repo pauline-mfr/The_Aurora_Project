@@ -10,13 +10,14 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-2">
-      SEARCH BAR
+
     </div>
     <div class="offset-8 col-2">
-      BURGER MENU
+      
     </div>
   </div>
 </div><!--  END NAVBAR -->
+
 
 <div class="col-4 mx-auto">
   <img src="logo.png" alt="logo Aurora Project">
@@ -24,10 +25,18 @@
 
 
 <div class="container py-5" id="video">     <!-- VIDEO HEADER -->
-<h2>Lorem Ipsum Dolor elet<br> magnus rosarum?</h2>
-<button class="btn">Button text ></button>
+<div class="row">
+  <div class="col-4 relative">
+<h2 class="relative">Lorem Ipsum Dolor elet<br> magnus rosarum?</h2>
+<h2 id="video-mobile">Lorem Ipsum Dolor elet<br> magnus rosarum?</h2>
+<button class="btn relative">Button text ></button>
+<div id="left-border"></div>
+</div>
+<div class="col-8 d-flex justify-content-center align-items-center pt-5">
 <div id="circle">
 <div id="play"><a href="#"></a></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -42,7 +51,7 @@
     <div class="line"></div>
     <h3>Lorem ipsum doloret amet</h3>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-    <a href="#">> Read more</a>
+    <a href="#">Read more</a>
   </div>
 </div>
 
@@ -51,7 +60,7 @@
     <div class="line"></div>
     <h3>Lorem ipsum doloret amet</h3>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-    <a href="#">> Read more</a>
+    <a href="#">Read more</a>
   </div>
   <div class="col-6">
     <img src="img.jpg" alt="" >
@@ -68,7 +77,7 @@
     <div class="line"></div>
     <h3>Lorem ipsum doloret amet</h3>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-    <a href="#">> Read more</a>
+    <a href="#">Read more</a>
   </div>
 </div>
 </div>
@@ -87,21 +96,21 @@
     <img src="tel.png">
     <h4>Mission 1</h4>
     <p>Lorem Ipsum is simply dummy text</p>
-    <button class="btn">> Learn more</button>
+    <button class="btn">Learn more</button>
     <div class="underline"></div>
   </div>
   <div class="col-4">
     <img src="tel.png">
     <h4>Mission 2</h4>
     <p>Lorem Ipsum is simply dummy text</p>
-    <button class="btn">> Learn more</button>
+    <button class="btn">Learn more</button>
     <div class="underline"></div>
   </div>
   <div class="col-4">
     <img src="tel.png">
     <h4>Mission 3</h4>
     <p>Lorem Ipsum is simply dummy text</p>
-    <button class="btn">> Learn more</button>
+    <button class="btn">Learn more</button>
     <div class="underline"></div>
   </div>
 </div>
