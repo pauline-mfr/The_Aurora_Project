@@ -24,25 +24,62 @@
         </div>
     </div>
 
+    
     <!-- ARTICLES -->
-    <div class="container-fluid mt-5">
+    <div class="container-fluid">
         <h2 class="color-purple border-bottom-title-articles">Articles récents</h2>
-
-        <h3 class="text-uppercase color-purple">Titre de l'article</h3>
-
-        <div class="mt-4 position-div ">
-            <div class="position-absolute">
-                <img src="images/femmes.jpg" alt="femmes" class="img-articles border-radius">
+    </div>
+    <div class="container-fluid position-div-articles mt-5 margin-bottom-articles">
+        <div class="position-title">
+            <h3 class="text-uppercase color-purple">Titre de l'article</h3>
+        </div>
+        <div class="position-image">
+            <img src="images/femmes.jpg" alt="femmes" class="img-articles border-radius">
+        </div>
+        <div class="border-radius bg-vert-eau d-flex flex-column position-text pt-5">
+            <div class="position-categorie text-center">
+                <h4 class="text-uppercase color-purple">Catégorie de l'article</h4>
+                <p class="mt-5 pl-5 pr-5 pb-4">Intellectum est enim mihi quidem in multis, et maxime in me ipso, sed paulo ante in omnibus, cum M. Marcellum senatui reique publicae concessisti, commemoratis praesertim offensionibus, te auctoritatem huius ordinis dignitatemque rei publicae tuis vel doloribus vel suspicionibus anteferre. Ille quidem fructum omnis ante actae vitae hodierno die maximum cepit, cum summo consensu senatus, tum iudicio tuo gravissimo et maximo. Ex quo profecto intellegis quanta in dato beneficio sit laus, cum in accepto sit tanta gloria.</p>
+                <a href="#" class="color-purple text-uppercase border-lire-la-suite"> > Lire la suite</a>
             </div>
-            <div class="border-radius padding-top d-flex flex-column position-text bg-vert-eau pt-5">
-                <h4 class="text-uppercase color-purple text-center">Catégorie de l'article</h4>
-                <p>Intellectum est enim mihi quidem in multis, et maxime in me ipso, sed paulo ante in omnibus, cum M. Marcellum senatui reique publicae concessisti, commemoratis praesertim offensionibus, te auctoritatem huius ordinis dignitatemque rei publicae tuis vel doloribus vel suspicionibus anteferre. Ille quidem fructum omnis ante actae vitae hodierno die maximum cepit, cum summo consensu senatus, tum iudicio tuo gravissimo et maximo. Ex quo profecto intellegis quanta in dato beneficio sit laus, cum in accepto sit tanta gloria.</p>
-                <a href="#" class="color-purple"> > Lire la suite</a>
+        </div>
+    </div>
+
+    <div class="container-fluid position-div-articles mt-5 margin-bottom-articles">
+        <div class="position-title">
+            <h3 class="text-uppercase color-purple">Titre de l'article</h3>
+        </div>
+        <div class="position-image">
+            <img src="images/femme_bain.jpg" alt="femme dans son bain" class="img-articles border-radius">
+        </div>
+        <div class="border-radius bg-vert-eau d-flex flex-column position-text pt-5">
+            <div class="position-categorie text-center">
+                <h4 class="text-uppercase color-purple">Catégorie de l'article</h4>
+                <p class="mt-5 pl-5 pr-5 pb-4">Intellectum est enim mihi quidem in multis, et maxime in me ipso, sed paulo ante in omnibus, cum M. Marcellum senatui reique publicae concessisti, commemoratis praesertim offensionibus, te auctoritatem huius ordinis dignitatemque rei publicae tuis vel doloribus vel suspicionibus anteferre. Ille quidem fructum omnis ante actae vitae hodierno die maximum cepit, cum summo consensu senatus, tum iudicio tuo gravissimo et maximo. Ex quo profecto intellegis quanta in dato beneficio sit laus, cum in accepto sit tanta gloria.</p>
+                <a href="#" class="color-purple text-uppercase border-lire-la-suite"> > Lire la suite</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid position-div-articles mt-5 margin-bottom-articles">
+        <div class="position-title">
+            <h3 class="text-uppercase color-purple">Titre de l'article</h3>
+        </div>
+        <div class="position-image">
+            <img src="images/femme_rit.jpg" alt="femme rit" class="img-articles border-radius">
+        </div>
+        <div class="border-radius bg-vert-eau d-flex flex-column position-text pt-5">
+            <div class="position-categorie text-center">
+                <h4 class="text-uppercase color-purple">Catégorie de l'article</h4>
+                <p class="mt-5 pl-5 pr-5 pb-4">Intellectum est enim mihi quidem in multis, et maxime in me ipso, sed paulo ante in omnibus, cum M. Marcellum senatui reique publicae concessisti, commemoratis praesertim offensionibus, te auctoritatem huius ordinis dignitatemque rei publicae tuis vel doloribus vel suspicionibus anteferre. Ille quidem fructum omnis ante actae vitae hodierno die maximum cepit, cum summo consensu senatus, tum iudicio tuo gravissimo et maximo. Ex quo profecto intellegis quanta in dato beneficio sit laus, cum in accepto sit tanta gloria.</p>
+                <a href="#" class="color-purple text-uppercase border-lire-la-suite"> > Lire la suite</a>
             </div>
         </div>
     </div>
 
 
+
+    
 <footer class="mt-5">
 </footer>
 
