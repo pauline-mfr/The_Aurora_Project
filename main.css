@@ -32,6 +32,10 @@ p, a {
     font-family: 'Raleway Regular 400', sans-serif;
 }
 
+p {
+    font-size: 16px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display Bold 700';
 }
@@ -150,6 +154,31 @@ a:hover {
     .position-title{
         left: 43%;
     }
+}
+
+hr {
+    color: #E4D4B8;
+    padding: 1.5px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #6B9696;
+    color: white;
+    border-radius: 3em;
+}
+
+.pagination a:hover:not(.active) {
+    background-color:#6B9696;
+    color:white;
+    border-radius: 3em;
 }
 
 
