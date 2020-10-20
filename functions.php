@@ -51,3 +51,5 @@ function my_register_sidebars() {
 }
 
 add_action( 'widgets_init', 'my_register_sidebars' );
+
+add_theme_support('post-thumbnails');
