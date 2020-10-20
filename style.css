@@ -32,7 +32,8 @@ Version:
 #missions p {color: #6D6B96; width: 250px; padding-bottom: 25px;}
 #missions span {width: 350px; color: #6B9696; font-weight: bold; margin-bottom: 60px;}
 
-footer {background-color: #6B9696; height: 200px;}
+/* FOOTER */
+footer {background-color: #6B9696;}
 
 @media (max-width: 600px) {
   #video {height: 300px;}
