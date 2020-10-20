@@ -50,3 +50,162 @@ footer {background-color: #6B9696;}
 @media (max-width: 1200px){
   #articles p {margin-top: 40px!important;}
 }
+
+
+            /* LISA -- BLOG PAGE -- */
+    /*______________________________________________ */
+
+    p, a {
+      font-family: 'Raleway Regular 400', sans-serif;
+  }
+  
+  p {
+      font-size: 16px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display Bold 700';
+  }
+  
+  /* HEADER */
+  .color-icons {
+      color: #E4D4B8;
+  }
+  
+  /* ARTICLES */
+  .color-purple {
+      color: #6D6B96;
+  }
+  
+  .border-bottom-title-articles:after {
+      content: "";
+      display: block; 
+      width: 50px; 
+      padding-top: 10px; 
+      border-bottom: 2px solid; 
+      color: #6D6B96;
+  }
+  
+  .bg-vert-eau{
+      background-color: #C3E3E3;
+  }
+  
+  .border-radius {
+      border-radius: 3em;
+  } 
+  
+  .img-articles{
+      max-width: 650px;
+      height: auto!important;
+      box-shadow: 10px 5px 5px #b0b0b0;
+  }
+  
+  .position-div-articles {
+      position: relative;
+  }
+  
+  .position-title {
+      position: absolute;
+      left: 43%;
+      top: -1.000em;
+      z-index: 2;
+  }
+  
+  .position-image {
+      position: absolute;
+      z-index: 1;
+      top: 4em;
+      left: 14em;
+  }
+  
+  .position-text {
+      margin: auto;
+      width: 850px;
+      height: 850px;
+  }
+  
+  .position-categorie{
+      padding-top: 30em;
+  }
+  
+  .border-lire-la-suite:after {
+      content: "";
+      display: block; 
+      width: 50%; 
+      padding-top: 10px; 
+      margin: auto;
+      border-bottom: 2px solid; 
+      color: #6D6B96;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  
+  a:hover {
+      color: #6B9696;
+  }
+  
+  
+  .margin-bottom-articles {
+      margin-bottom: 9.375em;
+  }
+  
+  /* MEDIA QUERIES Lisa*/
+  @media (max-width: 991px) {
+      .position-image{
+          left: 17%;
+      }
+  
+      .position-title{
+          left: 35%;
+      }
+  }
+  
+  @media (min-width: 991px) {
+      .position-image{
+          left: 15%;
+      }
+  
+      .position-title{
+          left: 43%;
+      }
+  }
+  
+  @media(min-width: 1920px){
+      .position-image{
+          left: 20%;
+      }
+  
+      .position-title{
+          left: 43%;
+      }
+  }
+  
+  hr {
+      color: #E4D4B8;
+      padding: 1.5px;
+      margin-left: 70px;
+      margin-right: 70px;
+  }
+  
+  .pagination a {
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+  }
+  
+  .pagination a.active {
+      background-color: #6B9696;
+      color: white;
+      border-radius: 3em;
+  }
+  
+  .pagination a:hover:not(.active) {
+      background-color:#6B9696;
+      color:white;
+      border-radius: 3em;
+  }
+  
+  
