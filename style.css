@@ -151,6 +151,45 @@ footer {background-color: #6B9696;}
   .margin-bottom-articles {
       margin-bottom: 9.375em;
   }
+
+
+  hr {
+    color: #E4D4B8;
+    padding: 3px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+ /* PAGINATION */ 
+
+ h2 .screen-reader-text{
+     display: none;
+ }
+
+.page-numbers {
+    color: black;
+    padding: 8px 16px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.page-numbers.current {
+    background-color: #6B9696;
+    color: white;
+    border-radius: 3em;
+}
+
+a.page-numbers:hover {
+    background-color:#6B9696;
+    color:white;
+    border-radius: 3em;
+}
+
+
+
+
+
+
   
   /* MEDIA QUERIES Lisa*/
   @media (max-width: 991px) {
@@ -181,31 +220,6 @@ footer {background-color: #6B9696;}
       .position-title{
           left: 43%;
       }
-  }
-  
-  hr {
-      color: #E4D4B8;
-      padding: 1.5px;
-      margin-left: 70px;
-      margin-right: 70px;
-  }
-  
-  .pagination a {
-      color: black;
-      padding: 8px 16px;
-      text-decoration: none;
-  }
-  
-  .pagination a.active {
-      background-color: #6B9696;
-      color: white;
-      border-radius: 3em;
-  }
-  
-  .pagination a:hover:not(.active) {
-      background-color:#6B9696;
-      color:white;
-      border-radius: 3em;
   }
   
   
