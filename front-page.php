@@ -72,11 +72,9 @@ foreach ($articles as $post) {
     <?php while (have_posts()) : the_post(); ?>
 
     <div class="col-sm-12 col-md-4">
-      <div><?php the_post_thumbnail('thumbnail'); ?></div>
+      <div class="rounded"><?php the_post_thumbnail('thumbnail'); ?></div>
       <h4><?php the_title(); ?></h4>
       <p><?php the_excerpt(); ?></p>
-      <button class="btn">Learn more</button>
-      <div class="underline"></div>
     </div>
     <?php endwhile;?>
 
