@@ -11,7 +11,7 @@
   <?php wp_body_open(); ?>
   <header class="header">
     <div class="container">
-      <p class="color-icons">blablala</p>
+      <p class="color-icons"><?php include(TEMPLATEPATH . '/searchform.php'); ?></p>
     </header>
 
 
