@@ -235,6 +235,27 @@ a.page-numbers:hover {
 	font-family: 'Oswald',sans-serif;
 	text-transform: uppercase;
 }
+
+/* ARTICLE */
+
+.div-width-article {
+    max-width: 1050px;
+    height: auto;
+    margin-top: -100px;
+    z-index: 1;
+    left: 14em;
+}
+
+.img-position-article {
+    position: relative;
+}
+
+
+.border-shadow {
+    box-shadow: 10px 5px 5px #b0b0b0;
+}
+
+
   
   /* MEDIA QUERIES Lisa*/
   @media (max-width: 991px) {
@@ -245,6 +266,10 @@ a.page-numbers:hover {
       .position-title{
           left: 35%;
       }
+
+      .div-width-article {
+        left: 0;
+    }
   }
   
   @media (min-width: 991px) {
@@ -254,6 +279,11 @@ a.page-numbers:hover {
   
       .position-title{
           left: 43%;
+      }
+
+      .div-width-article {
+        left: 10em;
+        right: 10em;
       }
   }
   
