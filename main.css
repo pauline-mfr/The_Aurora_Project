@@ -125,37 +125,7 @@ a:hover {
     margin-bottom: 9.375em;
 }
 
-/* MEDIA QUERIES Lisa*/
-@media (max-width: 991px) {
-    .position-image{
-        left: 17%;
-    }
-
-    .position-title{
-        left: 35%;
-    }
-}
-
-@media (min-width: 991px) {
-    .position-image{
-        left: 15%;
-    }
-
-    .position-title{
-        left: 43%;
-    }
-}
-
-@media(min-width: 1920px){
-    .position-image{
-        left: 20%;
-    }
-
-    .position-title{
-        left: 43%;
-    }
-}
-
+/* PAGINATION */
 hr {
     color: #E4D4B8;
     padding: 1.5px;
@@ -179,6 +149,66 @@ hr {
     background-color:#6B9696;
     color:white;
     border-radius: 3em;
+}
+
+/* ARTICLE */
+
+.div-width-article {
+    max-width: 1050px;
+    height: auto;
+    margin-top: -100px;
+    position: absolute;
+    left: 14em;
+}
+
+.img-position-article {
+    position: relative;
+}
+
+.border-shadow {
+    box-shadow: 10px 5px 5px #b0b0b0;
+}
+
+
+/* MEDIA QUERIES Lisa*/
+@media (max-width: 991px) {
+    .position-image{
+        left: 17%;
+    }
+
+    .position-title{
+        left: 35%;
+    }
+
+    .div-width-article {
+        left: 0;
+    }
+}
+
+@media (min-width: 991px) {
+    .position-image{
+        left: 15%;
+    }
+
+    .position-title{
+        left: 43%;
+    }
+
+    .div-width-article {
+        left: 10em;
+        right: 10em;
+    }
+
+}
+
+@media(min-width: 1920px){
+    .position-image{
+        left: 20%;
+    }
+
+    .position-title{
+        left: 43%;
+    }
 }
 
 
