@@ -7,7 +7,7 @@
         <a href="#" class="mb-5 d-flex justify-content-center"><?php the_category(); ?></a>
       </section>
       <section class="d-flex justify-content-center pt-5">
-        <p class="text-center">  <?php the_content(); ?></p>
+        <p class="text-center"><?php the_content(); ?></p>
       </section>
     </div>
 
