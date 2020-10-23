@@ -2,8 +2,10 @@
 <html <?php language_attributes(); ?> >
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
-  <script src="https://kit.fontawesome.com/5bf2af5d34.js" crossorigin="anonymous"></script>
   <title><?php wp_title() ?></title>
+  <title><?php bloginfo('name'); ?></title>
+   <!-- FONTAWESOME -->
+   <script src="https://kit.fontawesome.com/5bf2af5d34.js" crossorigin="anonymous"></script>
   <?php wp_head() ?>
 </head>
 <body <?php body_class(); ?> >
