@@ -1,18 +1,5 @@
 <?php get_header()?>
 
-<div class="container-fluid">
-    <div class="mt-2 d-flex justify-content-between">
-        <div>
-            <i class="fas fa-search fa-3x color-icons"></i>
-        </div>
-        <div>
-            <img src="logo.png" alt="logo Aurora Project">
-        </div>
-        <div>
-            <i class="fas fa-bars fa-3x color-icons"></i>
-        </div>
-    </div>
-</div>
     
 <!-- ARTICLES -->
 <div class="container-fluid">
