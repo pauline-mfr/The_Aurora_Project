@@ -28,7 +28,7 @@ function setup_theme() {
 }
 add_action('after_setup_theme', 'setup_theme');
 
-//CUSTOM POST TYPE
+//CUSTOM POST TYPE MISSIONS
 
 function mission_post_types() {
 	$labels = array(
@@ -39,7 +39,6 @@ function mission_post_types() {
         'edit_item' => 'Modifier une mission',
         'menu_name' => 'Missions'
     );
-
 	$args = array(
         'labels' => $labels,
         'public' => true,
@@ -49,9 +48,13 @@ function mission_post_types() {
         'menu_position' => 5,
         'menu_icon' => 'dashicons-universal-access',
 	);
-
 	register_post_type( 'Missions', $args );
-
 	}
-
 add_action( 'init', 'mission_post_types' ); // hook init lance la fonction
+
+
+// MENU
+register_nav_menus( array(
+ 'main' => 'Menu header',
+ 'footer' => 'Menu footer',
+) );

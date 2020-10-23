@@ -9,6 +9,7 @@ Version:
 #menu {display: block; font-size: 30px;}
 #menu label {cursor: pointer;}
 
+
 .color-icons {color: #E4D4B8;}
 #video {border: 5px solid #AFACE3; width: 75%; height: 400px; margin-top: 150px; z-index: 1;}
 #video button {background-color: #C3E3E3; color: #6D6B96; font-weight: bold; font-size: 18px; border-radius: 25px; margin-top: 30px; margin-left: -40px; padding: 5px 40px; z-index: 3;}

@@ -81,6 +81,4 @@ foreach ($articles as $post) {
   </div>
 </div>
 
-
-
 <?php get_footer()?>

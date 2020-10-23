@@ -14,12 +14,7 @@
     <div class="container-fluid">
            <div class="mt-2 d-flex justify-content-between">
                <div>
-                   <i class="fas fa-search fa-3x color-icons"></i>
-                   <div class="srch clearfix">
-                      <form method="GET" action="<?php echo get_site_url(); ?>">
-                        <div class="container cbd"><input max-length="120" autocomplete="off" placeholder="Rechercher..." value="<?php the_search_query(); ?>" name="s" id="q"><button type="submit" title="Rechercher sur le site"><i class="fa fa-search"></i></button></div>
-                      </form>
-                    </div>
+                   <i id="search-icon" class="fas fa-search fa-3x color-icons"></i><span id="search-bar"><?php get_search_form(); ?></span>
                   </div>
                   <div>
                     <?php if (function_exists('the_custom_logo')) {
@@ -38,11 +33,14 @@
                             <li><a href="#">Accueil</a></li>
                             <li><a href="#">A propos</a></li>
                             <li><a href="#">Articles</a></li>
+                            <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
                           </ul>
                         </div>
                       </div>
                       <label for="slide-menu-right" class="menu-overlay"></label>
-                    </div>               </div>
+
+                    </div>
+                  </div>
                   </div>
                 </div>
               </header>
