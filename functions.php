@@ -96,3 +96,40 @@ function my_register_sidebars() {
 }
 
 add_action( 'widgets_init', 'my_register_sidebars' );
+
+function infographies_custom_post_type() {
+
+	$labels = array(
+		'name'                => _x( 'Infographies', 'Post Type General Name'),
+		'singular_name'       => _x( 'Ifographie', 'Post Type Singular Name'),
+		'menu_name'           => __( 'Infographies'),
+		'all_items'           => __( 'Toutes les infographies'),
+		'view_item'           => __( 'Voir les infographies'),
+		'add_new_item'        => __( 'Ajouter une nouvelle infographie'),
+		'add_new'             => __( 'Ajouter'),
+		'edit_item'           => __( 'Editer l\' infographie'),
+		'update_item'         => __( 'Modifier l\' infographie'),
+		'search_items'        => __( 'Rechercher une infographie'),
+		'not_found'           => __( 'Non trouvée'),
+		'not_found_in_trash'  => __( 'Non trouvée dans la corbeille'),
+	);
+
+
+	$args = array(
+		'label'               => __( 'Infographies'),
+		'description'         => __( 'Tous sur les infographies'),
+		'labels'              => $labels,
+        'menu_icon'      => 'dashicons-format-image',
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+		'show_in_rest' => true,
+		'hierarchical'        => false,
+		'public'              => true,
+		'has_archive'         => true,
+		'rewrite'			  => array( 'slug' => 'infographies'),
+
+	);
+	register_post_type( 'infographies', $args );
+
+}
+
+add_action( 'init', 'infographies_custom_post_type', 0 );
