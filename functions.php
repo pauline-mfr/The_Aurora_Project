@@ -134,3 +134,27 @@ function infographies_custom_post_type() {
 }
 
 add_action( 'init', 'infographies_custom_post_type', 0 );
+
+
+// CUSTOM VIDEO HEADER
+function video_post_types() {
+	$labels = array(
+        'name' => 'Vidéos',
+        'all_items' => 'Toutes les vidéos',  // sous menu
+        'singular_name' => 'Vidéo',
+        'add_new_item' => 'Ajouter une vidéo',
+        'edit_item' => 'Modifier une vidéo',
+        'menu_name' => 'Vidéos'
+    );
+	$args = array(
+        'labels' => $labels,
+        'public' => true,
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'supports' => array( 'title', 'editor','thumbnail' ),
+        'menu_position' => 4,
+        'menu_icon' => 'dashicons-universal-access',
+	);
+	register_post_type( 'Vidéos', $args );
+	}
+add_action( 'init', 'video_post_types' ); // hook init lance la fonction

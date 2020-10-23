@@ -1,10 +1,17 @@
 <?php get_header()?>
 
-<div class="container py-5" id="video">     <!-- VIDEO HEADER -->
+
+<div class="container py-5" id="video">
+  <?php
+  query_posts(array(
+    'post_type' => 'Vidéos',
+    'showposts' => 1
+    ) ); ?>
+    <?php while (have_posts()) : the_post(); ?>    <!-- VIDEO HEADER -->
   <div class="row">
     <div class="col-md-4 relative">
-      <h2 class="relative">Lorem Ipsum Dolor elet<br> magnus rosarum?</h2>
-      <h2 id="video-mobile">Lorem Ipsum Dolor elet<br> magnus rosarum?</h2>
+      <h2 class="relative"><?php the_title(); ?></h2>
+      <h2 id="video-mobile"><?php the_title(); ?></h2>
       <button class="btn relative">Button text ></button>
       <div id="left-border"></div>
     </div>
@@ -12,8 +19,10 @@
       <div id="circle">
         <div id="play"><a href="#"></a></div>
       </div>
+      <?php the_content(); ?>
     </div>
   </div>
+  <?php endwhile;?>
 </div>
 
 <div class="container" id="articles">
@@ -109,7 +118,7 @@ foreach ($articles as $post) {
 <div class="accordion">
 		<ul class="ul">
 			<li class="li">
-       
+
 			</li>
 		</ul>
 	</div>
@@ -172,4 +181,3 @@ foreach ($articles as $post) {
 </div>
 
 <?php get_footer()?>
-
