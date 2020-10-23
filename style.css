@@ -6,6 +6,8 @@ Author:
 Version:
 */
 
+body{background-color: Beige;}
+
 #menu {display: block; font-size: 30px;}
 #menu label {cursor: pointer;}
 
@@ -17,7 +19,7 @@ Version:
 .relative {position: relative;}
 #left-border {background-color: white; width: 30px; height: 230px; position: absolute; top: 38px; left: -18px; z-index: 2;}
 #play {width: 0; height: 0;	border-top: 30px solid transparent;	border-left: 60px solid #E4D4B8; border-bottom: 30px solid transparent; top: 35px; left: 42px; position: absolute;}
-#circle {border: 4px solid #C3E3E3; width: 140px; height: 140px; border-radius: 70px; position: relative;}
+#circle {border: 4px solid #C3E3E3; width: 140px; height: 140px; border-radius: 70px; position: relative; cursor: pointer;}
 #video-mobile {display: none;}
 
 #articles { margin-top: 150px;}
@@ -34,7 +36,7 @@ Version:
 #missions h4 {text-transform: uppercase; color: #6D6B96; padding-top: 10px;}
 #missions p {color: #6D6B96; width: 250px;}
 #missions span {width: 350px; color: #6B9696; font-weight: bold; margin-bottom: 60px;}
-.rounded img { overflow:hidden; -webkit-border-radius:70px; -moz-border-radius:70px; border-radius:70px; width:120px; height:120px;}
+#missions img {overflow:hidden; -webkit-border-radius:70px; -moz-border-radius:70px; border-radius:70px; width:120px; height:120px;}
 
 /* FOOTER */
 footer {background-color: #6B9696;}
@@ -97,96 +99,96 @@ footer {background-color: #6B9696;}
     p, a {
       font-family: 'Raleway Regular 400', sans-serif;
   }
-  
+
   p {
       font-size: 16px;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
       font-family: 'Playfair Display Bold 700';
   }
-  
+
   /* HEADER */
   .color-icons {
       color: #E4D4B8;
   }
-  
+
   /* ARTICLES */
   .color-purple {
       color: #6D6B96;
   }
-  
+
   .border-bottom-title-articles:after {
       content: "";
-      display: block; 
-      width: 50px; 
-      padding-top: 10px; 
-      border-bottom: 2px solid; 
+      display: block;
+      width: 50px;
+      padding-top: 10px;
+      border-bottom: 2px solid;
       color: #6D6B96;
   }
-  
+
   .bg-vert-eau{
       background-color: #C3E3E3;
   }
-  
+
   .border-radius {
       border-radius: 3em;
-  } 
-  
+  }
+
   .img-articles{
       max-width: 650px;
       height: auto!important;
       box-shadow: 10px 5px 5px #b0b0b0;
   }
-  
+
   .position-div-articles {
       position: relative;
   }
-  
+
   .position-title {
       position: absolute;
       left: 43%;
       top: -1.000em;
       z-index: 2;
   }
-  
+
   .position-image {
       position: absolute;
       z-index: 1;
       top: 4em;
       left: 14em;
   }
-  
+
   .position-text {
       margin: auto;
       width: 850px;
       height: 850px;
   }
-  
+
   .position-categorie{
       padding-top: 30em;
   }
-  
+
   .border-lire-la-suite:after {
       content: "";
-      display: block; 
-      width: 50%; 
-      padding-top: 10px; 
+      display: block;
+      width: 50%;
+      padding-top: 10px;
       margin: auto;
-      border-bottom: 2px solid; 
+      border-bottom: 2px solid;
       color: #6D6B96;
   }
-  
+
   a {
       text-decoration: none;
   }
-  
-  
+
+
   a.hover-green:hover {
       color: #6B9696;
   }
-  
-  
+
+
   .margin-bottom-articles {
       margin-bottom: 9.375em;
   }
@@ -199,7 +201,7 @@ footer {background-color: #6B9696;}
     margin-right: 70px;
 }
 
- /* PAGINATION */ 
+ /* PAGINATION */
 
  h2 .screen-reader-text{
      display: none;
@@ -264,32 +266,32 @@ a.page-numbers:hover {
     transition: 0.5s;
     padding-top: 60px;
   }
-  
+
   .sidepanel a {
     color: white;
   }
 
-  
+
   .sidepanel .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
   }
-  
+
   .openbtn {
     cursor: pointer;
     border: none;
     background-color: transparent;
   }
-  
-  
+
+
   /* MEDIA QUERIES Lisa*/
   @media (max-width: 991px) {
       .position-image{
           left: 17%;
       }
-  
+
       .position-title{
           left: 35%;
       }
@@ -298,12 +300,12 @@ a.page-numbers:hover {
         left: 0;
     }
   }
-  
+
   @media (min-width: 991px) {
       .position-image{
           left: 15%;
       }
-  
+
       .position-title{
           left: 43%;
       }
@@ -313,15 +315,13 @@ a.page-numbers:hover {
         right: 10em;
       }
   }
-  
+
   @media(min-width: 1920px){
       .position-image{
           left: 20%;
       }
-  
+
       .position-title{
           left: 43%;
       }
   }
-  
-  

@@ -79,7 +79,7 @@ foreach ($articles as $post) {
       </div>
     </div>
     <?php endwhile; ?>
-  </div>  
+  </div>
 </div>
 
 
@@ -100,7 +100,7 @@ foreach ($articles as $post) {
     <?php while (have_posts()) : the_post(); ?>
 
     <div class="col-sm-12 col-md-4">
-      <div class="rounded"><?php the_post_thumbnail('thumbnail'); ?></div>
+      <div><?php the_post_thumbnail('thumbnail'); ?></div>
       <h4><?php the_title(); ?></h4>
       <p><?php the_excerpt(); ?></p>
     </div>
