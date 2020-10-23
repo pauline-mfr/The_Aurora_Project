@@ -16,14 +16,31 @@
       <div id="left-border"></div>
     </div>
     <div class="col-12 col-md-8 d-flex justify-content-center align-items-center pt-5">
-      <div id="circle">
+      <div id="circle" data-toggle="modal" data-target="#modal">
         <div id="play"><a href="#"></a></div>
       </div>
-      <?php the_content(); ?>
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"><?php the_title(); ?></h5>
+            </div>
+            <div class="modal-body text-center">
+              <?php the_content(); ?>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <?php endwhile;?>
 </div>
+
+
 
 <div class="container" id="articles">
 <?php
@@ -180,4 +197,11 @@ foreach ($articles as $post) {
   </div>
 </div>
 
+<script>
+
+// document.getElementById('circle').addEventListener("click", function() {
+//   document.getElementById('modal').style.display = "block";
+// });
+
+</script>
 <?php get_footer()?>
