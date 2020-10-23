@@ -9,25 +9,38 @@
   <?php wp_head() ?>
 </head>
 <body <?php body_class(); ?> >
+<script>
+
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "400px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+</script>
+
+
   <?php wp_body_open(); ?>
 
-    <div class="container">
-      <p class="color-icons"><?php include(TEMPLATEPATH . '/searchform.php'); ?></p>
-    </div>
-
     <header class="header">
+
     <div class="container-fluid">
-           <div class="mt-2 d-flex justify-content-between">
-               <div>
-                   <i id="search-icon" class="fas fa-search fa-3x color-icons"></i><span id="search-bar"><?php get_search_form(); ?></span>
-                  </div>
-                  <div>
+      <div class="mt-2 d-flex justify-content-between">
+        <!-- FORM SIDEPANNEL -->
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <?php include(TEMPLATEPATH . '/searchform.php'); ?>
+        </div>
+          <i id="search-icon" class="fas fa-search fa-3x color-icons openbtn rounded" onclick="openNav()"></i>
+        <div>
+        <!-- END FORM SIDEPANNEL -->
                     <?php if (function_exists('the_custom_logo')) {
                       the_custom_logo();
                     } ?>
                   </div>
                   <div id="menu">
-                    <label for="slide-menu-right" class="fas fa-bars fa-3x color-icons"></label>
+                    <label for="slide-menu-right" class="fas fa-bars fa-2x color-icons"></label>
                     <div class="slide-menu">
                       <input id="slide-menu-right" class="menu-toggle" type="checkbox" />
                       <div class="menu-display">
@@ -35,9 +48,6 @@
                         <h1 class="menu-title">Menu</h1>
                         <div class="menu-list">
                           <ul>
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">A propos</a></li>
-                            <li><a href="#">Articles</a></li>
                             <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
                           </ul>
                         </div>
@@ -49,8 +59,3 @@
                   </div>
                 </div>
               </header>
-
-    <section class="container text-center pt-5">
-      <h1 class="text-uppercase"><?php bloginfo('name'); ?></h1>
-      <h2><?php bloginfo('description'); ?></h2>
-    </section>

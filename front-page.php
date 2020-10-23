@@ -84,42 +84,7 @@ foreach ($articles as $post) {
 <!--  END ARTICLES -->
 
 
-
-<div class="accordion">
-		<ul class="ul">
-			<li class="li">
-				<img src="https://www.voyageavecnous.fr/wp-content/uploads/2015/01/plage-paradisiaque-maldives.jpg">
-				<a href="#" class="a">Tree</a>
-			</li>
-			<li  class="li">
-				<img src="https://www.voyageavecnous.fr/wp-content/uploads/2015/01/plage-paradisiaque-maldives.jpg">
-				<a href="#" class="a">Chair</a>
-			</li>
-			<li  class="li">
-				<img src="https://www.voyageavecnous.fr/wp-content/uploads/2015/01/plage-paradisiaque-maldives.jpg">
-				<a href="#" class="a">Room</a>
-			</li>
-			<li class="li">
-				<img src="https://www.voyageavecnous.fr/wp-content/uploads/2015/01/plage-paradisiaque-maldives.jpg">
-				<a href="#" class="a">Lamp</a>
-			</li>
-			<li  class="li">
-				<img src="https://www.voyageavecnous.fr/wp-content/uploads/2015/01/plage-paradisiaque-maldives.jpg">
-				<a href="#" class="a">Chairs</a>
-			</li>
-			<li  class="li">
-				<img src="https://www.voyageavecnous.fr/wp-content/uploads/2015/01/plage-paradisiaque-maldives.jpg">
-				<a href="#" class="a">JP</a>
-			</li>
-			<li  class="li">
-				<img src="https://www.voyageavecnous.fr/wp-content/uploads/2015/01/plage-paradisiaque-maldives.jpg">
-				<a href="#" class="a">JP Web</a>
-			</li>
-		</ul>
-	</div>
-
-
-<h1>Les dernières infographies</h1>
+<!--  INFOGRAPHIES -->
 
 <?php
     query_posts(array(
@@ -128,51 +93,20 @@ foreach ($articles as $post) {
     ) );
 ?>
 
-<!--<div class="container div-accordion">
-
-
-
-<div class="accordion">
-		<ul class="ul">
-			<li class="li">
-
-			</li>
-		</ul>
-	</div>
-</div>
-
-<div id="carouselExampleControls" class="carousel slide" data-interval="2000"data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-
-    </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>-->
-
-
-<div class="row">
-  <?php while (have_posts()) : the_post(); ?>
-    <div class="col-lg-4">
+<div class="container">
+  <h2 class="size-color-title-info border-title-info">Les dernières infographies</h2>
+  <div class="row mt-3 mb-5 pb-5">
+    <?php while (have_posts()) : the_post(); ?>
+    <div class="col">
       <div class="card" style="width: 18rem;">
-        <a href="<?php the_permalink(); ?>" target="_blank">
+                <a href="<?php the_permalink(); ?>" target="_blank">
         <?php the_post_thumbnail('medium', ['class' => 'card-img-top']);?>
         </a>
-      <div class="card-body">
-        <p class="card-text"><?php the_title(); ?></p>
       </div>
     </div>
+    <?php endwhile; ?>
+  </div>
 </div>
-
-<?php endwhile; ?>
-
-
 
 <div class="container" id="missions">
   <div class="row">
@@ -188,7 +122,7 @@ foreach ($articles as $post) {
     <?php while (have_posts()) : the_post(); ?>
 
     <div class="col-sm-12 col-md-4">
-      <div class="rounded"><?php the_post_thumbnail('thumbnail'); ?></div>
+      <div><?php the_post_thumbnail('thumbnail'); ?></div>
       <h4><?php the_title(); ?></h4>
       <p><?php the_excerpt(); ?></p>
     </div>
@@ -197,11 +131,4 @@ foreach ($articles as $post) {
   </div>
 </div>
 
-<script>
-
-// document.getElementById('circle').addEventListener("click", function() {
-//   document.getElementById('modal').style.display = "block";
-// });
-
-</script>
 <?php get_footer()?>

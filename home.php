@@ -23,10 +23,10 @@ if (have_posts()) :
         <div class="position-categorie mt-4 text-center">
             <?php $categories = get_the_category();
             foreach ($categories as $category){
-            echo '<div class="mb-5"> <a class="text-uppercase color-purple" href="' . get_category_link($category->term_id) . '" target="_blank">' . $category->cat_name . '</a> </div>';
+            echo '<div class="mb-5"> <a class="text-uppercase color-purple hover-green" href="' . get_category_link($category->term_id) . '" target="_blank">' . $category->cat_name . '</a> </div>';
             }?>
             <p class="mt-4 pl-5 pr-5 pb-4"><?php echo wp_trim_words( get_the_content(), 40, '...' ); ?></p>
-            <a href="<?php the_permalink() ?>" target="_blank" class="color-purple text-uppercase border-lire-la-suite"> > Lire la suite</a>
+            <a href="<?php the_permalink() ?>" target="_blank" class="color-purple hover-green text-uppercase border-lire-la-suite"> > Lire la suite</a>
         </div>
     </div>
 </div>
