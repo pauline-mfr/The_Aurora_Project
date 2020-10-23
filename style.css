@@ -182,7 +182,7 @@ footer {background-color: #6B9696;}
   }
   
   
-  a:hover {
+  a.hover-green:hover {
       color: #6B9696;
   }
   
@@ -268,10 +268,7 @@ a.page-numbers:hover {
   .sidepanel a {
     color: white;
   }
-  
-  .sidepanel a:hover {
-    color: #f1f1f1;
-  }
+
   
   .sidepanel .closebtn {
     position: absolute;
@@ -281,20 +278,11 @@ a.page-numbers:hover {
   }
   
   .openbtn {
-    font-size: 20px;
     cursor: pointer;
-    padding: 10px 15px;
     border: none;
     background-color: transparent;
   }
   
-  .openbtn:hover {
-    background-color:#6B9696;
-  }
-  
-  
-
-
   
   /* MEDIA QUERIES Lisa*/
   @media (max-width: 991px) {
