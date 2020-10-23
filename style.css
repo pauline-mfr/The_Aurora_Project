@@ -26,6 +26,7 @@ Version:
 #articles h3 {color: #E4D4B8; margin-top: 15px;}
 #articles p {margin-top: 60px; font-size: 15px; margin-bottom: 60px;}
 #articles a {text-decoration: none; color: #6B9696; font-weight: bold; font-size: 18px; border: 3px solid #6B9696; border-radius: 25px; padding: 5px 40px;}
+#articles a:hover {background-color: #6B9696; color: #fff;}
 #articles .row {margin-bottom: 150px;}
 
 #missions {width: 75%; height: 400px; margin-bottom: 150px;}
@@ -180,7 +181,7 @@ footer {background-color: #6B9696;}
   a {
       text-decoration: none;
   }
-  
+
   
   a.hover-green:hover {
       color: #6B9696;
