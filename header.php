@@ -32,7 +32,7 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <?php include(TEMPLATEPATH . '/searchform.php'); ?>
         </div>
-          <button class="openbtn rounded" onclick="openNav()"><i id="search-icon" class="fas fa-search fa-3x color-icons"></i><span id="search-bar"></button>
+          <i id="search-icon" class="fas fa-search fa-3x color-icons openbtn rounded" onclick="openNav()"></i>
         <div>
         <!-- END FORM SIDEPANNEL -->
                     <?php if (function_exists('the_custom_logo')) {
@@ -62,8 +62,3 @@
                   </div>
                 </div>
               </header>
-
-    <section class="container text-center pt-5">
-      <h1 class="text-uppercase"><?php bloginfo('name'); ?></h1>
-      <h2><?php bloginfo('description'); ?></h2>
-    </section>
