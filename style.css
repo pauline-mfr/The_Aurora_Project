@@ -6,6 +6,14 @@ Author:
 Version:
 */
 
+body {
+    background-color: seashell;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 #menu {display: block; font-size: 30px;}
 #menu label {cursor: pointer;}
 
@@ -38,7 +46,7 @@ Version:
 .rounded img { overflow:hidden; -webkit-border-radius:70px; -moz-border-radius:70px; border-radius:70px; width:120px; height:120px;}
 
 /* FOOTER */
-footer {background-color: #6B9696;}
+footer {background-color: #6189ab;}
 
 /* TEST MENU */
 
@@ -282,6 +290,12 @@ a.page-numbers:hover {
     cursor: pointer;
     border: none;
     background-color: transparent;
+  }
+
+  /* TO THE TOP - icon */
+
+  a.to-the-top{
+      color: white;
   }
   
   

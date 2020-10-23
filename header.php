@@ -48,9 +48,6 @@
                         <h1 class="menu-title">Menu</h1>
                         <div class="menu-list">
                           <ul>
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">A propos</a></li>
-                            <li><a href="#">Articles</a></li>
                             <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
                           </ul>
                         </div>
