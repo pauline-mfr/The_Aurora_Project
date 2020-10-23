@@ -9,25 +9,38 @@
   <?php wp_head() ?>
 </head>
 <body <?php body_class(); ?> >
+<script>
+
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "400px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+</script>
+
+
   <?php wp_body_open(); ?>
 
-    <div class="container">
-      <p class="color-icons"><?php include(TEMPLATEPATH . '/searchform.php'); ?></p>
-    </div>
-
     <header class="header">
+
     <div class="container-fluid">
-           <div class="mt-2 d-flex justify-content-between">
-               <div>
-                   <i id="search-icon" class="fas fa-search fa-3x color-icons"></i><span id="search-bar"><?php get_search_form(); ?></span>
-                  </div>
-                  <div>
+      <div class="mt-2 d-flex justify-content-between">
+        <!-- FORM SIDEPANNEL -->
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <?php include(TEMPLATEPATH . '/searchform.php'); ?>
+        </div>
+          <button class="openbtn rounded" onclick="openNav()"><i id="search-icon" class="fas fa-search fa-3x color-icons"></i><span id="search-bar"></button>
+        <div>
+        <!-- END FORM SIDEPANNEL -->
                     <?php if (function_exists('the_custom_logo')) {
                       the_custom_logo();
                     } ?>
                   </div>
                   <div id="menu">
-                    <label for="slide-menu-right" class="fas fa-bars fa-3x color-icons"></label>
+                    <label for="slide-menu-right" class="fas fa-bars fa-2x color-icons"></label>
                     <div class="slide-menu">
                       <input id="slide-menu-right" class="menu-toggle" type="checkbox" />
                       <div class="menu-display">
