@@ -17,7 +17,9 @@ if (have_posts()) :
         <h3 class="text-uppercase color-purple"><?php the_title() ?></h3>
     </div>
     <div class="position-image">
-    <?php the_post_thumbnail('original', ['class' =>'img-articles border-radius', 'alt' => '']); ?>
+    <?php 
+    the_post_thumbnail('original', ['class' =>'img-articles border-radius', 'alt' => '')]); 
+    ?>
     </div>
     <div class="border-radius bg-vert-eau d-flex flex-column position-text pt-5">
         <div class="position-categorie mt-4 text-center">
