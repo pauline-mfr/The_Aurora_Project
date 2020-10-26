@@ -13,10 +13,8 @@
             </div>
         </div>
         <div class="d-flex justify-content-center pt-5">
-            <p>Tous Droits Réservés, &copy; <?php echo date('Y') ?> - <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo('name')  ?></a></p>
-            <div class="float-right ml-3">
-                <a href="#" class="to-the-top"><i class="far fa-arrow-alt-circle-up fa-2x" title="Retour vers le haut"></i></a>
-            </div>
+            <p class="text-center">Tous Droits Réservés, &copy; <?php echo date('Y') ?> - <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo('name')  ?></a></p>
+            <a href="#" class="to-the-top"><i class="far fa-arrow-alt-circle-up fa-2x" title="Retour vers le haut"></i></a>
         </div>
     </div>
 </footer>
