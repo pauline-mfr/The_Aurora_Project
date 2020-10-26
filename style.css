@@ -143,10 +143,11 @@ footer a {color: white;}
   }
 
   .position-title {
-      position: absolute;
-      left: 43%;
-      top: -1.000em;
-      z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -1.000em;
+    text-align: center; 
   }
 
   .position-image {
@@ -308,10 +309,6 @@ a.page-numbers:hover {
           left: 17%;
       }
 
-      .position-title{
-          left: 35%;
-      }
-
       .div-width-article {
         left: 0;
     }
@@ -320,10 +317,6 @@ a.page-numbers:hover {
   @media (min-width: 991px) {
       .position-image{
           left: 15%;
-      }
-
-      .position-title{
-          left: 43%;
       }
 
       .div-width-article {
@@ -337,7 +330,4 @@ a.page-numbers:hover {
           left: 20%;
       }
 
-      .position-title{
-          left: 43%;
-      }
   }
