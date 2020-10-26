@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> >
 <head>
-  <meta charset="<?php bloginfo( 'charset' ); ?>">
-  <title><?php wp_title() ?></title>
   <title><?php bloginfo('name'); ?></title>
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta name="description" content="<?php bloginfo( 'description' ); ?>">
    <!-- FONTAWESOME -->
    <script src="https://kit.fontawesome.com/5bf2af5d34.js" crossorigin="anonymous"></script>
   <?php wp_head() ?>
@@ -45,10 +45,10 @@
                       <input id="slide-menu-right" class="menu-toggle" type="checkbox" />
                       <div class="menu-display">
                         <label for="slide-menu-right" class="close-icon">Close</label>
-                        <h1 class="menu-title">Menu</h1>
+                        <h1 class="menu-title text-white">Menu</h1>
                         <div class="menu-list">
                           <ul>
-                            <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
+                            <?php wp_nav_menu( array( 'theme_location' => 'main', 'class' => 'text-secondary' ) ); ?>
                           </ul>
                         </div>
                       </div>
