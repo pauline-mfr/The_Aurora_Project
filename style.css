@@ -42,7 +42,7 @@ svg {z-index: -1;}
 #articles a:hover {background-color: #6B9696; color: #fff;}
 #articles .row {margin-bottom: 150px;}
 
-#missions {width: 75%; height: 400px; margin-bottom: 150px;}
+#missions {width: 75%; height: 400px; margin-bottom: 100px;}
 #missions h2 {text-transform: uppercase; font-size: 30px; color: #6D6B96; font-size: 40px;}
 #missions h2:after {content: ''; border-bottom: 5px solid; color: #6D6B96; width: 70px; display: block;}
 #missions h4 {text-transform: uppercase; color: #6D6B96; padding-top: 10px;}

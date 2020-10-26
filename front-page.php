@@ -62,7 +62,7 @@ foreach ($articles as $post) {
         <div class="line"></div>
         <h3><?php the_title(); ?></h3>
         <p><?php the_excerpt() ?></p>
-        <a href="<?php the_permalink() ?>">Read more</a>
+        <a href="<?php the_permalink() ?>">Lire plus</a>
       </div>
     </div>
   <?php } else { ?>
@@ -71,7 +71,7 @@ foreach ($articles as $post) {
         <div class="line"></div>
         <h3><?php the_title(); ?></h3>
         <p><?php the_excerpt() ?></p>
-        <a href="<?php the_permalink() ?>">Read more</a>
+        <a href="<?php the_permalink() ?>">Lire plus</a>
       </div>
       <div class="col-12 col-md-6">
         <div><?php the_post_thumbnail('medium', ['class' => 'img-fluid', 'alt' => '', 'style' => 'height: auto;']); ?></div>
