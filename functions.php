@@ -153,7 +153,7 @@ function video_post_types() {
         'has_archive' => true,
         'supports' => array( 'title', 'editor','thumbnail' ),
         'menu_position' => 4,
-        'menu_icon' => 'dashicons-universal-access',
+        'menu_icon' => 'dashicons-video-alt3',
 	);
 	register_post_type( 'Vidéos', $args );
 	}

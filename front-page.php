@@ -1,6 +1,7 @@
 <?php get_header()?>
 
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#6189ab" fill-opacity="1" d="M0,320L40,304C80,288,160,256,240,218.7C320,181,400,139,480,149.3C560,160,640,224,720,234.7C800,245,880,203,960,197.3C1040,192,1120,224,1200,224C1280,224,1360,192,1400,176L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+<div id="wave">
 <div class="container py-5" id="video">
   <?php
   query_posts(array(
@@ -39,8 +40,8 @@
   </div>
   <?php endwhile;?>
 </div>
-
-
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#6189ab" fill-opacity="1" d="M0,320L40,304C80,288,160,256,240,218.7C320,181,400,139,480,149.3C560,160,640,224,720,234.7C800,245,880,203,960,197.3C1040,192,1120,224,1200,224C1280,224,1360,192,1400,176L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
 
 <div class="container" id="articles">
 <?php
@@ -61,7 +62,7 @@ foreach ($articles as $post) {
         <div class="line"></div>
         <h3><?php the_title(); ?></h3>
         <p><?php the_excerpt() ?></p>
-        <a href="<?php the_permalink() ?>">Read more</a>
+        <a href="<?php the_permalink() ?>">Lire plus</a>
       </div>
     </div>
   <?php } else { ?>
@@ -70,7 +71,7 @@ foreach ($articles as $post) {
         <div class="line"></div>
         <h3><?php the_title(); ?></h3>
         <p><?php the_excerpt() ?></p>
-        <a href="<?php the_permalink() ?>">Read more</a>
+        <a href="<?php the_permalink() ?>">Lire plus</a>
       </div>
       <div class="col-12 col-md-6">
         <div><?php the_post_thumbnail('medium', ['class' => 'img-fluid', 'alt' => '', 'style' => 'height: auto;']); ?></div>
