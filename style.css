@@ -50,8 +50,11 @@ html {
 
 /* FOOTER */
 footer {background-color: #6189ab;}
+footer ul {margin-top: 30px;}
+footer li {list-style: none; margin-left: -25px; margin-top: 8px;}
+footer a {color: white;}
 
-/* TEST MENU */
+
 
 .menu-display {background-color: #6189ab; padding: 60px 0; overflow: hidden; transition: all 0.3s; position: fixed;  width: 500px; top: 0; right: -500px; bottom: 0; z-index: 999;}
 .menu-overlay {background: rgba(0, 0, 0, 0.4); display: none; position: fixed; left: 0; right: 0; top: 0; bottom: 0; z-index: 900;}
@@ -69,22 +72,6 @@ footer {background-color: #6189ab;}
 .menu-list li a {display: block; padding: 10px 40px; font-size: 24px; color: #ffffff; text-decoration: none;}
 .menu-list li a:hover {background: #000000; opacity: 0.4;}
 .menu-list li a:active {background: #C3E3E3;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 600px) {
   #video {height: 300px;}
