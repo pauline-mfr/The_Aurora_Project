@@ -14,21 +14,21 @@ if (have_posts()) :
 
 <div class="container-fluid position-div-articles mt-5 margin-bottom-articles">
     <div class="position-title">
-        <h3 class="text-uppercase color-purple"><?php the_title() ?></h3>
+        <h3 class="text-uppercase color-title"><?php the_title() ?></h3>
     </div>
     <div class="position-image">
     <?php 
-    the_post_thumbnail('original', ['class' =>'img-articles border-radius', 'alt' => '')]); 
+    the_post_thumbnail('original', ['class' =>'img-articles border-radius', 'alt' => '']); 
     ?>
     </div>
-    <div class="border-radius bg-vert-eau d-flex flex-column position-text pt-5">
+    <div class="border-radius bg-bleu-foncé d-flex flex-column position-text pt-5">
         <div class="position-categorie mt-4 text-center">
             <?php $categories = get_the_category();
             foreach ($categories as $category){
-            echo '<div class="mb-5"> <a class="text-uppercase color-purple hover-green" href="' . get_category_link($category->term_id) . '" target="_blank">' . $category->cat_name . '</a> </div>';
+            echo '<div class="mb-5"> <a class="text-uppercase color-white hover-dark" href="' . get_category_link($category->term_id) . '" target="_blank">' . $category->cat_name . '</a> </div>';
             }?>
             <p class="mt-4 pl-5 pr-5 pb-4"><?php echo wp_trim_words( get_the_content(), 40, '...' ); ?></p>
-            <a href="<?php the_permalink() ?>" target="_blank" class="color-purple hover-green text-uppercase border-lire-la-suite"> > Lire la suite</a>
+            <a href="<?php the_permalink() ?>" target="_blank" class="color-white hover-dark text-uppercase border-lire-la-suite"> > Lire la suite</a>
         </div>
     </div>
 </div>

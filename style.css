@@ -124,8 +124,8 @@ footer {background-color: #6189ab;}
   }
 
   /* ARTICLES */
-  .color-purple {
-      color: #6D6B96;
+  .color-white {
+      color: #fff;
   }
 
   .border-bottom-title-articles:after {
@@ -137,8 +137,8 @@ footer {background-color: #6189ab;}
       color: #6D6B96;
   }
 
-  .bg-vert-eau{
-      background-color: #C3E3E3;
+  .bg-bleu-foncé{
+      background-color: #6189ab;
   }
 
   .border-radius {
@@ -148,7 +148,7 @@ footer {background-color: #6189ab;}
   .img-articles{
       max-width: 650px;
       height: auto!important;
-      box-shadow: 10px 5px 5px #b0b0b0;
+      box-shadow: 5px 5px 5px rgba(39, 36, 36, 0.8);
   }
 
   .position-div-articles {
@@ -186,7 +186,7 @@ footer {background-color: #6189ab;}
       padding-top: 10px;
       margin: auto;
       border-bottom: 2px solid;
-      color: #6D6B96;
+      color: #ffffff;
   }
 
   a {
@@ -194,9 +194,17 @@ footer {background-color: #6189ab;}
   }
 
 
-  a.hover-green:hover {
+  a.hover-dark:hover {
 
-      color: #6B9696;
+      color: #2a2a2a;
+  }
+
+  .color-title:hover {
+      color: #fff;
+  }
+
+  .color-purple {
+      color: #6D6B96;
   }
 
 
@@ -226,13 +234,13 @@ footer {background-color: #6189ab;}
 }
 
 .page-numbers.current {
-    background-color: #6B9696;
+    background-color: #6189ab;
     color: white;
     border-radius: 3em;
 }
 
 a.page-numbers:hover {
-    background-color:#6B9696;
+    background-color: #6189ab;
     color:white;
     border-radius: 3em;
 }
