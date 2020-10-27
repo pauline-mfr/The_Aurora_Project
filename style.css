@@ -243,6 +243,7 @@ a.page-numbers:hover {
 
 .size-color-title-info {text-transform: uppercase; font-size: 30px; color: #6D6B96; font-size: 40px;}
 .border-title-info {content: ''; border-bottom: 5px solid; color: #6D6B96; width: 70px; display: block;}
+.border-radius-infographie {border-radius: 2em;}
 
 
 /* ARTICLE */
