@@ -247,24 +247,26 @@ a.page-numbers:hover {
 .size-color-title-info {text-transform: uppercase; font-size: 30px; color: #6D6B96; font-size: 40px;}
 .border-title-info {content: ''; border-bottom: 5px solid; color: #6D6B96; width: 70px; display: block;}
 
+.border-radius-infographie {border-radius: 4em;}
 
 /* ARTICLE */
 
 .div-width-article {
     max-width: 1050px;
     height: auto;
-    margin-top: -100px;
     z-index: 1;
-    left: 14em;
+    left: 0;
+    right: 0;
 }
 
 .img-position-article {
     position: relative;
+    right: 0;
+    left: 0;
 }
 
-
 .border-shadow {
-    box-shadow: 10px 5px 5px #b0b0b0;
+    box-shadow: 5px 5px 5px #b0b0b0;
 }
 
 /* SIDEPANNEL FORM */
