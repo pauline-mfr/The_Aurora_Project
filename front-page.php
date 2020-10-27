@@ -9,7 +9,7 @@
     'showposts' => 1
     ) ); ?>
     <?php while (have_posts()) : the_post(); ?>    <!-- VIDEO HEADER -->
-  <div class="row">
+  <div class="row" id="animation">
     <div class="col-md-4 relative">
       <h2 class="relative"><?php the_title(); ?></h2>
       <h2 id="video-mobile"><?php the_title(); ?></h2>
