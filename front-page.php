@@ -94,7 +94,7 @@ foreach ($articles as $post) {
     ) );
 ?>
 
-<div class="container">
+<div class="container" id="infographies">
   <h2 class="size-color-title-info border-title-info">Les dernières infographies</h2>
   <div class="row mt-3 mb-5 pb-5">
     <?php while (have_posts()) : the_post(); ?>
@@ -110,7 +110,7 @@ foreach ($articles as $post) {
 </div>
 
 <div class="container" id="missions">
-  <div class="row">
+  <div class="row"  id="lesmissions">
     <h2>Missions</h2>
     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
   </div>
