@@ -13,7 +13,7 @@
     <div class="col-md-4 relative">
       <h2 class="relative"><?php the_title(); ?></h2>
       <h2 id="video-mobile"><?php the_title(); ?></h2>
-      <button class="btn relative">Button text ></button>
+      <button class="btn relative">Nos conseils</button>
       <div id="left-border"></div>
     </div>
     <div class="col-12 col-md-8 d-flex justify-content-center align-items-center pt-5">
@@ -112,7 +112,7 @@ foreach ($articles as $post) {
 <div class="container" id="missions">
   <div class="row"  id="lesmissions">
     <h2>Missions</h2>
-    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+    <span>Nos missions pour une évolution de la conscience collective/span>
   </div>
   <div class="row">
   <?php
@@ -128,8 +128,6 @@ foreach ($articles as $post) {
       <p><?php the_excerpt(); ?></p>
     </div>
     <?php endwhile;?>
-
   </div>
 </div>
-
 <?php get_footer()?>
