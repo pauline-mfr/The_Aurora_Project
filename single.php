@@ -9,5 +9,6 @@
             <p class="mb-5"><?php the_content(); ?></p>
         </div>
     </div>
+    <div class="clear"></div>
 <?php get_footer() ?>
 
