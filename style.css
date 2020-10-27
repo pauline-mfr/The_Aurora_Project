@@ -160,6 +160,11 @@ footer i {float: right;}
       z-index: 1;
       top: 4em;
       left: 14em;
+      bottom: 4em;
+  }
+
+  .position-categorie{
+      padding-top: 30em;
   }
 
   .position-text {
@@ -168,9 +173,7 @@ footer i {float: right;}
       height: 850px;
   }
 
-  .position-categorie{
-      padding-top: 30em;
-  }
+
 
   .border-lire-la-suite:after {
       content: "";
