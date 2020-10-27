@@ -49,6 +49,15 @@
                         <div class="menu-list">
                           <ul>
                             <?php wp_nav_menu( array( 'theme_location' => 'main', 'class' => 'text-secondary' ) ); ?>
+                            <li class="page_item page-item-9 current_page_item">
+                              <a href="#animation" class="text-white">Stéréotypes & sexisme</a>
+                            </li>
+                            <li class="page_item page-item-9 current_page_item">
+                              <a href="#infographies" class="text-white">Les dernières infographies</a>
+                            </li>
+                            <li class="page_item page-item-9 current_page_item">
+                              <a href="#lesmissions" class="text-white">Nos missions</a>
+                            </li>
                           </ul>
                         </div>
                       </div>
