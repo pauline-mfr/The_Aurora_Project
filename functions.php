@@ -93,6 +93,13 @@ function my_register_sidebars() {
             'after_title'   => '</h3>',
         )
     );
+    // CONTACT FORM
+    register_sidebar(
+      array(
+    	'id' => 'contact-form',
+    	'name' => 'Contact Form',
+    )
+  );
 }
 
 add_action( 'widgets_init', 'my_register_sidebars' );

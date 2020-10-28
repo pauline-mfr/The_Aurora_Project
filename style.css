@@ -78,22 +78,6 @@ footer i {float: right;}
 .menu-list li a:hover {background: #000000; opacity: 0.4;}
 .menu-list li a:active {background: #C3E3E3;}
 
-@media (max-width: 600px) {
-  #video {height: 300px;}
-  #video h2 {display: none;}
-  #left-border {display: none;}
-  #video button {display: none;}
-  #play {position: relative;}
-  .line {margin-top: 50px;}
-  #articles .row {margin-bottom: 50px;}
-  #missions h2 {margin-top: 50px;}
-  #missions img {margin-top: 20px;}
-}
-
-@media (max-width: 1200px){
-  #articles p {margin-top: 40px!important;}
-}
-
 
             /* LISA -- BLOG PAGE -- */
     /*______________________________________________ */
@@ -310,6 +294,31 @@ a.page-numbers:hover {
   a.to-the-top{
       color: white;
   }
+
+  @media (max-width: 600px) {
+    #video {height: 300px;}
+    #video h2 {display: none;}
+    #left-border {display: none;}
+    #video button {display: none;}
+    #play {position: relative;}
+    .line {margin-top: 50px;}
+    #articles .row {margin-bottom: 50px;}
+    #missions h2 {margin-top: 50px;}
+    #missions img {margin-top: 20px;}
+    #missions {margin-bottom: 300px;}
+  }
+
+  @media (max-width: 1200px){
+    #articles p {margin-top: 40px!important;}
+  }
+
+  @media (max-width: 990px){
+    #articles img {margin-top: 120px;}
+    #missions {margin-bottom: 600px;}
+    footer {padding-top: 60px;}
+    footer .col-sm-12 {padding-bottom: 50px;}
+  }
+
 
   /* MEDIA QUERIES Lisa*/
   @media (max-width: 991px) {

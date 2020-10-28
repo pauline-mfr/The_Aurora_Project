@@ -28,7 +28,7 @@
               <h5 class="modal-title" id="exampleModalLabel"><?php the_title(); ?></h5>
             </div>
             <div class="modal-body text-center">
-              <?php the_content(); ?>
+              <?php// the_content(); ?>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
@@ -98,8 +98,8 @@ foreach ($articles as $post) {
   <h2 class="size-color-title-info border-title-info">Les dernières infographies</h2>
   <div class="row mt-3 mb-5 pb-5">
     <?php while (have_posts()) : the_post(); ?>
-    <div class="col">
-      <div class="card" style="width: 18rem;">
+    <div class="col-sm-12 col-lg-4">
+      <div class="card mb-5" style="width: 18rem;">
                 <a href="<?php the_permalink(); ?>" target="_blank">
         <?php the_post_thumbnail('medium', ['class' => 'card-img-top']);?>
         </a>
@@ -109,10 +109,12 @@ foreach ($articles as $post) {
   </div>
 </div>
 
+<!--  MISSIONS -->
+
 <div class="container" id="missions">
   <div class="row"  id="lesmissions">
     <h2>Missions</h2>
-    <span>Nos missions pour une évolution de la conscience collective/span>
+    <span>Nos missions pour une évolution de la conscience collective</span>
   </div>
   <div class="row">
   <?php
@@ -122,7 +124,7 @@ foreach ($articles as $post) {
     ) ); ?>
     <?php while (have_posts()) : the_post(); ?>
 
-    <div class="col-sm-12 col-md-4">
+    <div class="col-lg-4 col-sm-12">
       <div><?php the_post_thumbnail('thumbnail'); ?></div>
       <h4><?php the_title(); ?></h4>
       <p><?php the_excerpt(); ?></p>

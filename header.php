@@ -49,10 +49,10 @@
                         <div class="menu-list">
                           <ul>
                             <?php wp_nav_menu( array( 'theme_location' => 'main', 'class' => 'text-secondary' ) ); ?>
-                            <li class="page_item page-item-9 current_page_item">
-                              <a href="#infographies" class="text-white">Les dernières infographies</a>
+                            <li class="pl-4">
+                              <a href="#infographies" class="text-white">Nos infographies</a>
                             </li>
-                            <li class="page_item page-item-9 current_page_item">
+                            <li class="pl-4">
                               <a href="#lesmissions" class="text-white">Nos missions</a>
                             </li>
                           </ul>
