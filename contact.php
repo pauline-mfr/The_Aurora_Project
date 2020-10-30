@@ -1,7 +1,7 @@
-<?php get_header()?>
+<?php get_header(); ?>
 
 <div class="container">
-<?php dynamic_sidebar('contact-form') ?>
+<?php dynamic_sidebar( 'contact-form'); ?>
 </div>
 
-<?php get_footer()?>
+<?php get_footer(); ?>

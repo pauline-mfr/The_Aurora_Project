@@ -28,7 +28,7 @@
               <h5 class="modal-title" id="exampleModalLabel"><?php the_title(); ?></h5>
             </div>
             <div class="modal-body text-center">
-              <?php// the_content(); ?>
+              <?php the_content(); ?>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
