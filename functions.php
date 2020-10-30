@@ -59,15 +59,6 @@ register_nav_menus( array(
  'footer' => 'Menu footer',
 ) );
 
-// CONTACT FORM
-function my_contact_form() {
-  register_sidebar( array(
-  'id' => 'contact-form',
-  'name' => 'Contact form',
-) );
-}
-add_action( 'widgets_init', 'my_contact_form');
-
 function my_register_sidebars() {
     register_sidebar(
         array(
