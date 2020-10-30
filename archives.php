@@ -23,5 +23,5 @@ Template Name: Page d'archives
                 </ul>
 
         <?php } ?>
-        
+
 <?php get_footer(); ?>

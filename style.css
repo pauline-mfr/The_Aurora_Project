@@ -5,8 +5,6 @@ Description:
 Author:
 Version:
 */
-
-
 body {
     background-color: seashell;
 }
@@ -14,10 +12,6 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
-
-#menu {display: block; font-size: 30px;}
-#menu label {cursor: pointer;}
 
 #wave {background-color: #6189ab;}
 svg {z-index: -1;}
@@ -27,6 +21,7 @@ svg {z-index: -1;}
 #video button {background-color: #C3E3E3; color: #6D6B96; font-weight: bold; font-size: 18px; border-radius: 25px; margin-top: 30px; margin-left: -40px; padding: 5px 40px; z-index: 3; cursor: unset; text-transform: uppercase;}
 #video h2 {color: #AFACE3; margin-top: 70px; margin-left: -40px; z-index: 3; font-size: 80px; line-height: 60px;}
 .relative {position: relative;}
+#video h5 {color: #AFACE3; font-size: 20px; font-weight: bold; text-transform: uppercase;}
 #left-border {background-color: #6189ab; width: 30px; height: 250px; position: absolute; top: 45px; left: -18px; z-index: 2;}
 #play {width: 0; height: 0;	border-top: 30px solid transparent;	border-left: 60px solid SeaShell; border-bottom: 30px solid transparent; top: 35px; left: 42px; position: absolute;}
 #circle {border: 4px solid #AFACE3; width: 140px; height: 140px; border-radius: 70px; position: relative; cursor: pointer;}
@@ -50,9 +45,13 @@ svg {z-index: -1;}
 #missions span {width: 350px; color: #6189ab; font-weight: bold; margin-bottom: 60px;}
 #missions img {overflow:hidden; -webkit-border-radius:70px; -moz-border-radius:70px; border-radius:70px; width:120px; height:120px;}
 
-/*CONTACT FORM */
-
-
+/* CONTACT */
+#contact h2 {text-transform: uppercase; font-size: 30px; color: #6D6B96; font-size: 40px; padding-top: 100px;}
+#contact h2:after {content: ''; border-bottom: 5px solid; color: #6D6B96; width: 70px; display: block;}
+#contact p {width: 550px; color: #6189AB; font-weight: bold; margin-top: 20px;}
+#contact input {border: 1px solid #6D6B96;}
+#contact textarea {border: 1px solid #6D6B96;}
+#contact button {border-radius: 25px; background-color: #6189AB; color: white; font-weight: bold; padding: 5px 40px;}
 
 /* FOOTER */
 footer .container-fluid {background-color: #6189ab; margin-top: -100px;}
@@ -63,8 +62,10 @@ footer a:hover {color: DarkSlateGrey;}
 footer i {float: right;}
 .widget-title {color: DarkSlateGrey;}
 
+/* MENU */
 
-
+#menu {display: block; font-size: 30px;}
+#menu label {cursor: pointer;}
 .menu-display {background-color: #6189ab; padding: 60px 0; overflow: hidden; transition: all 0.3s; position: fixed;  width: 500px; top: 0; right: -500px; bottom: 0; z-index: 999;}
 .menu-overlay {background: rgba(0, 0, 0, 0.4); display: none; position: fixed; left: 0; right: 0; top: 0; bottom: 0; z-index: 900;}
 .close-icon {background: url(http://i.imgur.com/iHYRssG.png) no-repeat scroll center center transparent; opacity: 0; position: absolute; width: 60px; height: 60px; right: 15px; top: 40px; text-indent: -9999px; transition: all 0.3s;}
@@ -296,6 +297,17 @@ a.page-numbers:hover {
       color: white;
   }
 
+  @media (max-width: 1200px){
+    #articles p {margin-top: 40px!important;}
+  }
+
+  @media (max-width: 990px){
+    #articles img {margin-top: 120px;}
+    #missions {margin-bottom: 600px;}
+    footer {padding-top: 60px;}
+    footer .col-sm-12 {padding-bottom: 50px;}
+  }
+
   @media (max-width: 600px) {
     #video {height: 300px;}
     #video h2 {display: none;}
@@ -308,18 +320,6 @@ a.page-numbers:hover {
     #missions img {margin-top: 20px;}
     #missions {margin-bottom: 300px;}
   }
-
-  @media (max-width: 1200px){
-    #articles p {margin-top: 40px!important;}
-  }
-
-  @media (max-width: 990px){
-    #articles img {margin-top: 120px;}
-    #missions {margin-bottom: 600px;}
-    footer {padding-top: 60px;}
-    footer .col-sm-12 {padding-bottom: 50px;}
-  }
-
 
   /* MEDIA QUERIES Lisa*/
   @media (max-width: 991px) {
