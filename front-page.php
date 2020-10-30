@@ -94,7 +94,7 @@ foreach ($articles as $post) {
     ) );
 ?>
 
-<div class="container" id="infographies">
+<div class="container">
   <h2 class="size-color-title-info border-title-info">Les dernières infographies</h2>
   <div class="row mt-3 mb-5 pb-5">
     <?php while (have_posts()) : the_post(); ?>
@@ -112,7 +112,7 @@ foreach ($articles as $post) {
 <!--  MISSIONS -->
 
 <div class="container" id="missions">
-  <div class="row"  id="lesmissions">
+  <div class="row">
     <h2>Missions</h2>
     <span>Nos missions pour une évolution de la conscience collective</span>
   </div>

@@ -49,12 +49,6 @@
                         <div class="menu-list">
                           <ul>
                             <?php wp_nav_menu( array( 'theme_location' => 'main', 'class' => 'text-secondary' ) ); ?>
-                            <li class="pl-4">
-                              <a href="#infographies" class="text-white">Nos infographies</a>
-                            </li>
-                            <li class="pl-4">
-                              <a href="#lesmissions" class="text-white">Nos missions</a>
-                            </li>
                           </ul>
                         </div>
                       </div>
